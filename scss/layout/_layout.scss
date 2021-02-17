@@ -1,0 +1,85 @@
+html {
+  font-size: 16px;
+
+  body {
+    /* Définitions générales */
+    .color-text-white {
+      color: white;
+    }
+
+    /* Header général */
+    .header {
+      background-color: white;
+
+      .accueil {
+        background-color: grey;
+
+        .titre {
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: center;
+          background-color: white;
+        }
+      }
+
+      .localisation {
+        display: flex;
+        align-items: center;
+
+        .fa-map-marker-alt {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+          margin-left: 4.5rem;
+        }
+        .reservation {
+          p.bold-effect {
+            font-weight: bold;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    /* Contenu général */
+    section {
+      padding: 6rem 2rem;
+
+      &.informations {
+        padding: 0;
+        background-color: black;
+      }
+
+      .login {
+        background-color: red;
+      }
+    }
+
+    /* Footer général */
+    .footer {
+      background-color: black;
+      width: 20rem;
+      font-size: 1.5rem;
+      .informations {
+        margin-left: 1.5rem;
+      }
+      .bold-effect {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      .block-text-icone {
+        display: flex;
+        line-height: 2rem;
+        .color-text-white {
+        }
+
+        i {
+          color: white;
+          margin-right: 1rem;
+        }
+        .fa-utensils {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
