@@ -1,0 +1,32 @@
+.header {
+    background-color: $color-white;
+
+    .accueil {
+      background-color: grey;
+
+      .titre {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: $color-white;
+      }
+    }
+
+    .localisation {
+      display: flex;
+      align-items: center;
+
+      .fa-map-marker-alt {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        margin-left: 4.5rem;
+      }
+      
+      .reservation {
+        p.bold-effect {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
