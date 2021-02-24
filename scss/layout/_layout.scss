@@ -4,7 +4,7 @@ html {
   body {
     /* Définitions générales */
     .color-text-white {
-      color: white;
+      color: $color-white;
       a {
         transition: $default-transition;
       }
@@ -12,7 +12,7 @@ html {
 
     /* Header général */
     .header {
-      background-color: white;
+      background-color: $color-white;
 
       .accueil {
         background-color: grey;
@@ -21,7 +21,7 @@ html {
           font-size: 2rem;
           font-weight: bold;
           text-align: center;
-          background-color: white;
+          background-color: $color-white;
         }
       }
 
@@ -34,13 +34,13 @@ html {
           margin-right: 1rem;
           margin-left: 4.5rem;
         }
-        .reservation {
-          background-color: lightgray;
+      }
+      .reservation {
+        background-color: lightgray;
 
-          p.bold-effect {
-            font-weight: bold;
-            font-size: 2rem;
-          }
+        p.bold-effect {
+          font-weight: bold;
+          font-size: 2rem;
         }
       }
     }
@@ -76,7 +76,7 @@ html {
         line-height: 2rem;
 
         i {
-          color: white;
+          color: $color-white;
           margin-right: 1rem;
         }
         .fa-utensils {

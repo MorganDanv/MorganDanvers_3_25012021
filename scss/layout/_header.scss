@@ -1,6 +1,6 @@
 /* Header général */
 .header {
-  background-color: white;
+  background-color: $color-white;
 
   .accueil {
     background-color: grey;
@@ -9,26 +9,51 @@
       font-size: 2rem;
       font-weight: bold;
       text-align: center;
-      background-color: white;
+      background-color: $color-white;
     }
   }
 
   .localisation {
     display: flex;
-    align-items: center;
 
     .fa-map-marker-alt {
       font-size: 1.5rem;
       margin-right: 1rem;
       margin-left: 4.5rem;
     }
-    .reservation {
-      background-color: lightgray;
+  }
+  div.reservation {
+    background-color: lightgray;
+    text-align: center;
 
-      p.bold-effect {
-        font-weight: bold;
-        font-size: 2rem;
-      }
+    .bouton {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: pink;
+      border-radius: 1rem;
     }
+    .decouverte {
+      text-align: center;
+    }
+
+    p.bold-effect {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+  .choix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-bulles {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  .liste-resto {
+    background-color: lightgray;
   }
 }
