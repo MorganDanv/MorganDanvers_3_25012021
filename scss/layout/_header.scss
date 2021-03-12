@@ -15,28 +15,38 @@
 
   .localisation {
     display: flex;
+    margin-bottom: 1rem;
+    height: 2rem;
+    .town {
+      margin-top: 1rem;
+    }
 
     .fa-map-marker-alt {
       font-size: 1.5rem;
       margin-right: 1rem;
       margin-left: 4.5rem;
+      margin-top: 1rem;
     }
   }
   div.reservation {
     background-color: lightgray;
     text-align: center;
 
-    .bouton {
-      width: 2rem;
-      height: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: pink;
-      border-radius: 1rem;
+    button {
+      text-align: center;
+      background-color: #ff79da;
+      border-radius: 2rem;
+      height: 2.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: $color-white;
+      background: linear-gradient(#ff79da, #9356dc);
+      box-shadow: 0.5px 0.5px 0.5px 0.5px lightgray;
     }
     .decouverte {
       text-align: center;
+      margin-top: 1rem;
+      font-size: 1.2rem;
     }
 
     p.bold-effect {
@@ -45,15 +55,32 @@
     }
   }
   .choix {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .info-bulles {
-    margin-left: 2rem;
     margin-bottom: 1rem;
-  }
-  .liste-resto {
-    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    i:hover {
+      margin-right: 1rem;
+      background-color: #9356dc;
+      cursor: pointer;
+    }
+    .button-localisation {
+      border-radius: 1rem;
+      height: 4rem;
+      width: 14rem;
+      background-color: lightgray;
+      cursor: pointer;
+      opacity: 1;
+      box-shadow: 0px 0.5px 0.5px 0.5px grey;
+      text-decoration: none;
+    }
+    .button-localisation:hover {
+      background-color: #9356dc;
+      opacity: 0.5;
+    }
   }
 }

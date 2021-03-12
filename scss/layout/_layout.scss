@@ -10,40 +10,7 @@ html {
       }
     }
 
-    /* Header général */
-    .header {
-      background-color: $color-white;
-
-      .accueil {
-        background-color: grey;
-
-        .titre {
-          font-size: 2rem;
-          font-weight: bold;
-          text-align: center;
-          background-color: $color-white;
-        }
-      }
-
-      .localisation {
-        display: flex;
-        align-items: center;
-
-        .fa-map-marker-alt {
-          font-size: 1.5rem;
-          margin-right: 1rem;
-          margin-left: 4.5rem;
-        }
-      }
-      .reservation {
-        background-color: lightgray;
-
-        p.bold-effect {
-          font-weight: bold;
-          font-size: 2rem;
-        }
-      }
-    }
+    @import "header";
 
     /* Contenu général */
     section {
@@ -58,7 +25,24 @@ html {
         background-color: red;
       }
     }
-
+    main {
+      .liste-resto {
+        text-align: center;
+        background-color: lightgray;
+      }
+      p.bold-effect {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      .images-resto {
+        width: 10rem;
+        height: 10rem;
+        transition: transform 0.3s ease;
+      }
+      .images-resto:hover {
+        transform: scale(1.2);
+      }
+    }
     /* Footer général */
     .footer {
       background-color: black;
