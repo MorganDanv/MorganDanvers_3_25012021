@@ -28,19 +28,71 @@ html {
     main {
       .liste-resto {
         text-align: center;
-        background-color: lightgray;
+        background-color: rgb(243, 240, 240);
+        padding-bottom: 2rem;
+      }
+      .la-palette {
+        text-decoration: none;
+      }
+      .background-text {
+        background-color: white;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        // border: 1px solid rgb(230, 230, 230);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-decoration: none;
+      }
+      .bold-effect2 {
+        font-weight: bold;
+      }
+
+      .fa-heart:hover {
+        background-color: linear-gradient(#ff79da, #9356dc);
+      }
+      .text-placement {
+        justify-content: left;
       }
       p.bold-effect {
         font-weight: bold;
         font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: left;
+        padding-left: 1rem;
       }
       .images-resto {
-        width: 10rem;
-        height: 10rem;
+        width: 90%;
         transition: transform 0.3s ease;
+        height: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
       }
       .images-resto:hover {
         transform: scale(1.2);
+      }
+      div.esbroufe {
+        height: 140px;
+        max-height: 140px;
+      }
+
+      i.my_heart:hover {
+        cursor: pointer;
+        font-weight: 900;
+        fill: red;
+      }
+      // i.my_heart:hover:before {
+      //   background-color: red;
+      // }
+      a {
+        text-decoration: none;
       }
     }
     /* Footer général */
@@ -50,10 +102,15 @@ html {
       font-size: 1.5rem;
       .informations {
         margin-left: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
       }
       .bold-effect {
         font-weight: bold;
         margin-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
       }
       .block-text-icone {
         display: flex;

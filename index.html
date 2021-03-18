@@ -7,18 +7,19 @@
     <title>OhMyFood</title>
     <script src="https://kit.fontawesome.com/3976001123.js" crossorigin="anonymous"></script>
     <link href="css/styles.min.css" rel="stylesheet">
-
 </head>
 
 <body>
     <header class="header">
         <div class="accueil">
             <div class="titre">
-                <p>ohmyfood</p>
+                <p class="title">ohmyfood</p>
             </div>
             <div class="localisation">
-                <i class="fas fa-map-marker-alt"></i>
-                <p class="town">Paris, Belleville</p>
+                <div class="placement-localisation">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="town">Paris, Belleville</p>
+                </div>
             </div>
             <div class="reservation">
                 <p class="bold-effect">Réservez le menu qui vous convient</p>
@@ -29,15 +30,17 @@
             </div>
         </div>
         <div class="choix">
-            <title>Fonctionnement</title>
+            <p class="texte-fonction">Fonctionnement</p>
             <div class="info-bulles">
                 <a href="#">
-                    <button class="button-localisation"><i class="fas fa-mobile-alt"></i> Choisissez un
+                    <button class="button-localisation"><i class="fas fa-mobile-alt"></i>Choisissez un
                         restaurant</button>
                 </a>
             </div>
             <div class="info-bulles">
-                <button class="button-localisation"> <i class="fas fa-list-ul"></i>Composez votre menu</button>
+                <button class="button-localisation"> <i class="fas fa-list-ul"></i>
+                    Composez votre menu
+                </button>
             </div>
             <div class="info-bulles">
                 <button class="button-localisation"> <i class="fas fa-store"></i>Dégustez au restaurant</button>
@@ -48,40 +51,65 @@
     <main>
         <div class="liste-resto">
             <p class="bold-effect">Restaurants</p>
-            <div class="la-palette">
-                <a href="#">
-                    <img src="images/La-palette-du-gout.jpg" class="images-resto" alt="La-palette-du-goût">
-                </a>
-                <p> La palette du goût</p>
-                <p>Ménilmontant</p>
-                <i class="far fa-heart"></i>
-            </div>
-            <div class="la-note">
-                <a href="#">
-                    <img src="images/La-note-enchantee.jpg" class="images-resto" alt="La-note-enchantée">
-                </a>
-                <p>La note enchantée</p>
-                <p>Charonne</p>
-                <i class="far fa-heart"></i>
-            </div>
-            <div class="française">
-                <a href="#">
-                    <img src="images/a-la-francaise.jpg" class="images-resto" alt="à-la-française">
-                </a>
-                <p>A la française</p>
-                <p>Cité Rouge</p>
-                <i class="far fa-heart"></i>
-            </div>
-            <div class="le-delice">
-                <a href="#">
-                    <img src="images/Le-delice-des-sens.jpg" class="images-resto" alt="Le-délice-des-sens">
-                </a>
-                <p>Le délice des sens</p>
+            <a href="#">
+                <div class="la-palette">
+                    <div class="esbroufe">
+                        <img src="images/La-palette-du-gout.jpg" class="images-resto" alt="La-palette-du-goût">
+                    </div>
+                    <div class="background-text">
+                        <div class="text-placement">
+                            <p class="bold-effect2"> La palette du goût</p>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <i class="far fa-heart my_heart"></i>
+                    </div>
+                </div>
+            </a>
 
-                <p>Folie-Méricourt</p>
-                <i class="far fa-heart"></i>
-            </div>
+            <a href="#">
+                <div class="la-note">
+                    <div class="esbroufe">
+                        <img src="images/La-note-enchantee.jpg" class="images-resto" alt="La-note-enchantée">
+                    </div>
+                    <div class="background-text">
+                        <div class="text-placement">
+                            <p class="bold-effect2">La note enchantée</p>
+                            <p>Charonne</p>
+                        </div>
+                        <i class="far fa-heart my_heart"></i>
 
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="française">
+
+                    <div class="esbroufe">
+                        <img src="images/a-la-francaise.jpg" class="images-resto" alt="à-la-française">
+                    </div>
+                    <div class="background-text">
+                        <div class="text-placement">
+                            <p class="bold-effect2">A la française</p>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <i class="far fa-heart my_heart"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="le-delice">
+                    <div class="esbroufe">
+                        <img src="images/Le-delice-des-sens.jpg" class="images-resto" alt="Le-délice-des-sens">
+                    </div>
+                    <div class="background-text">
+                        <div class="text-placement">
+                            <p class="bold-effect2">Le délice des sens</p>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <i class="far fa-heart my_heart"></i>
+                    </div>
+                </div>
+            </a>
         </div>
     </main>
 
@@ -99,10 +127,12 @@
                 <p class="color-text-white">Devenir partenaire</p>
             </div>
             <div>
-                <p class="color-text-white">Mention légales</p>
+                <p class="color-text-white">Mentions légales</p>
             </div>
             <div>
-                <p class="color-text-white">Contact</p>
+                <a href="#">
+                    <p class="color-text-white text-decoration">Contact</p>
+                </a>
             </div>
         </section>
     </footer>

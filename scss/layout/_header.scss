@@ -3,34 +3,44 @@
   background-color: $color-white;
 
   .accueil {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
 
     .titre {
       font-size: 2rem;
       font-weight: bold;
       text-align: center;
       background-color: $color-white;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 
   .localisation {
     display: flex;
-    margin-bottom: 1rem;
-    height: 2rem;
+    //background-color: rgb(233, 233, 233);
+    background-color: #f6f6f6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 2px solid #dadada;
     .town {
-      margin-top: 1rem;
+      font-weight: bold;
     }
 
     .fa-map-marker-alt {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-right: 1rem;
       margin-left: 4.5rem;
-      margin-top: 1rem;
+    }
+    .placement-localisation {
+      display: flex;
     }
   }
   div.reservation {
-    background-color: lightgray;
+    //background-color: rgb(240, 240, 240);
+    background-color: #f6f6f6;
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     button {
       text-align: center;
@@ -42,6 +52,8 @@
       color: $color-white;
       background: linear-gradient(#ff79da, #9356dc);
       box-shadow: 0.5px 0.5px 0.5px 0.5px lightgray;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .decouverte {
       text-align: center;
@@ -52,9 +64,18 @@
     p.bold-effect {
       font-weight: bold;
       font-size: 2rem;
+      padding-top: 1rem;
     }
   }
   .choix {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  .texte-fonction {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
   .info-bulles {
     margin-bottom: 1rem;
@@ -62,24 +83,29 @@
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-
-    i:hover {
+    i {
       margin-right: 1rem;
+      margin-left: 1rem;
+    }
+    i:hover {
       background-color: #9356dc;
       cursor: pointer;
     }
     .button-localisation {
       border-radius: 1rem;
       height: 4rem;
-      width: 14rem;
-      background-color: lightgray;
+      width: 18rem;
+      background-color: rgb(246, 246, 246);
       cursor: pointer;
-      opacity: 1;
-      box-shadow: 0px 0.5px 0.5px 0.5px grey;
-      text-decoration: none;
+      // box-shadow: 0px 1.5px 1.5px 1.5px rgb(211, 210, 210),
+      //   0px 1.5px 1.5px 1.5px rgb(233, 233, 233);
+      // box-shadow: 0px 0.5px 0.5px 0.5px rgb(136, 136, 136),        0px 4px 4px 4px rgb(206, 206, 206)
+      box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #cecece8f;
+      text-align: left;
+      border: 1px solid #ececec;
     }
     .button-localisation:hover {
-      background-color: #9356dc;
+      background-color: lighten($color: #9356dc, $amount: 32%);
       opacity: 0.5;
     }
   }
