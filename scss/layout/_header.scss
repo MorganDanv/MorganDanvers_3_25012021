@@ -6,29 +6,27 @@
     background-color: rgb(255, 255, 255);
 
     .titre {
-      font-size: 2rem;
+      font-size: $dooble-font-size;
       font-weight: bold;
       text-align: center;
       background-color: $color-white;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: $marge-base;
+      padding-bottom: $marge-base;
     }
   }
 
   .localisation {
     display: flex;
-    //background-color: rgb(233, 233, 233);
-    background-color: #f6f6f6;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top: 2px solid #dadada;
+    background: linear-gradient(grey 0%, lightgray 10%);
+    padding-top: $marge-base;
+    padding-bottom: $marge-base;
     .town {
       font-weight: bold;
     }
 
     .fa-map-marker-alt {
-      font-size: 1.2rem;
-      margin-right: 1rem;
+      font-size: $small-font-size;
+      margin-right: $marge-base;
       margin-left: 4.5rem;
     }
     .placement-localisation {
@@ -36,70 +34,67 @@
     }
   }
   div.reservation {
-    //background-color: rgb(240, 240, 240);
     background-color: #f6f6f6;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: $marge-base;
+    padding-bottom: $marge-base;
 
     button {
       text-align: center;
       background-color: #ff79da;
       border-radius: 2rem;
       height: 2.5rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-top: $intermediate-marge;
+      margin-bottom: $intermediate-marge;
       color: $color-white;
       background: linear-gradient(#ff79da, #9356dc);
       box-shadow: 0.5px 0.5px 0.5px 0.5px lightgray;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: $marge-base;
+      padding-right: $marge-base;
+      border: none;
     }
     .decouverte {
       text-align: center;
-      margin-top: 1rem;
-      font-size: 1.2rem;
+      margin-top: $marge-base;
+      font-size: $small-font-size;
     }
 
     p.bold-effect {
       font-weight: bold;
-      font-size: 2rem;
-      padding-top: 1rem;
+      font-size: $dooble-font-size;
+      padding-top: $marge-base;
     }
   }
   .choix {
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+    padding-bottom: $medium-marge;
+    padding-top: $marge-base;
   }
   .texte-fonction {
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding-top: $marge-base;
+    padding-left: $marge-base;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: $intermediate-font-size;
   }
   .info-bulles {
-    margin-bottom: 1rem;
+    margin-bottom: $marge-base;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: $marge-base;
     i {
-      margin-right: 1rem;
-      margin-left: 1rem;
+      margin-right: $marge-base;
+      margin-left: $marge-base;
     }
     i:hover {
       background-color: #9356dc;
       cursor: pointer;
     }
     .button-localisation {
-      border-radius: 1rem;
+      border-radius: $basic-border-radius;
       height: 4rem;
       width: 18rem;
       background-color: rgb(246, 246, 246);
       cursor: pointer;
-      // box-shadow: 0px 1.5px 1.5px 1.5px rgb(211, 210, 210),
-      //   0px 1.5px 1.5px 1.5px rgb(233, 233, 233);
-      // box-shadow: 0px 0.5px 0.5px 0.5px rgb(136, 136, 136),        0px 4px 4px 4px rgb(206, 206, 206)
       box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #cecece8f;
       text-align: left;
       border: 1px solid #ececec;
