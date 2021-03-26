@@ -1,0 +1,111 @@
+main {
+  .liste-resto a {
+    background-color: rgb(243, 240, 240);
+    padding-bottom: $medium-marge;
+    padding: $marge-base;
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
+  h2.bold-effect {
+    font-weight: bold;
+    font-size: $dooble-font-size;
+    padding-top: 3rem;
+    padding-left: $marge-base;
+    padding-bottom: 0.5rem;
+    background-color: rgb(243, 240, 240);
+  }
+  h3.bold-effect {
+    font-weight: bold;
+    font-size: $dooble-font-size;
+    padding-top: $marge-base;
+    padding-left: $marge-base;
+  }
+  .la-palette {
+    text-decoration: none;
+    height: 100%;
+  }
+  .background-text {
+    background-color: white;
+    border-bottom-right-radius: $basic-border-radius;
+    border-bottom-left-radius: $basic-border-radius;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $marge-base;
+    align-items: center;
+    padding: $marge-base;
+    text-decoration: none;
+  }
+  .bold-effect2 {
+    font-weight: bold;
+  }
+
+  .text-placement {
+    justify-content: left;
+  }
+  p.bold-effect {
+    font-weight: bold;
+    font-size: $dooble-font-size;
+    padding-top: $medium-marge;
+    padding-bottom: $marge-base;
+  }
+  .images-resto {
+    width: 100%;
+    transition: transform 0.3s ease;
+    height: 145px;
+    object-fit: cover;
+  }
+  .images-resto:hover {
+    transform: scale(1.2);
+  }
+  div.esbroufe {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: $basic-border-radius;
+    border-top-right-radius: $basic-border-radius;
+    position: relative;
+
+    .ribbon-box {
+      border-top: 25px solid cyan;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      padding: 0 10px;
+      width: 100px;
+      font-family: sans-serif;
+      size: 11px;
+      color: green;
+    }
+    .ribbon-box .txt {
+      position: absolute;
+      top: -20px;
+      left: 20px;
+    }
+  }
+  .heart_container {
+    position: absolute;
+    right: 2rem;
+    .far {
+      z-index: 1;
+    }
+    .fas {
+      z-index: 0;
+      display: none;
+    }
+    &:hover {
+      .fas {
+        z-index: 0;
+        display: inline;
+      }
+      .far {
+        z-index: 1;
+        display: none;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

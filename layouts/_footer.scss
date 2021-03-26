@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  width: 20rem;
+  font-size: $intermediate-font-size;
+  .informations {
+    margin-left: $intermediate-marge;
+    padding-top: $intermediate-marge;
+    padding-bottom: $intermediate-marge;
+  }
+  .bold-effect {
+    font-weight: bold;
+    margin-bottom: $marge-base;
+  }
+  a {
+    text-decoration: none;
+  }
+  .block-text-icone {
+    display: flex;
+    line-height: 2rem;
+
+    i {
+      color: $color-white;
+      margin-right: $marge-base;
+    }
+    .fa-utensils {
+      margin-right: $intermediate-marge;
+    }
+  }
+}

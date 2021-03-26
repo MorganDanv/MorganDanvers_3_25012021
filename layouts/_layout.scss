@@ -1,0 +1,33 @@
+html {
+  font-size: 16px;
+
+  body {
+    /* Définitions générales */
+    .color-text-white {
+      color: $color-white;
+      a {
+        transition: $default-transition;
+      }
+    }
+
+    // @import "header";
+
+    /* Contenu général */
+    section {
+      padding: 6rem $medium-marge;
+
+      &.informations {
+        padding: 0;
+        background-color: black;
+      }
+
+      .login {
+        background-color: red;
+      }
+    }
+    // @import "../main";
+
+    /* Footer général */
+    // @import "../footer";
+  }
+}
