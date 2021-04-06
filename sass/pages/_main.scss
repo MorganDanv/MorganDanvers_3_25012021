@@ -67,20 +67,22 @@ main {
     position: relative;
 
     .ribbon-box {
-      border-top: 25px solid cyan;
       position: absolute;
       top: 10px;
       right: 25px;
-      padding: 0 10px;
+      padding: 5px 10px;
       width: 100px;
       font-family: sans-serif;
       size: 11px;
       color: green;
-    }
-    .ribbon-box .txt {
-      position: absolute;
-      top: -20px;
-      left: 20px;
+      background-color: aqua;
+      text-align: center;
+
+      // .txt {
+      // position: absolute;
+      // top: -20px;
+      // left: 20px;
+      // }
     }
   }
   .heart_container {

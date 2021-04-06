@@ -87,14 +87,6 @@
     justify-content: center;
     align-items: center;
     margin-top: $marge-base;
-    i {
-      margin-right: $marge-base;
-      margin-left: $marge-base;
-    }
-    i:hover {
-      background-color: #9356dc;
-      cursor: pointer;
-    }
     .button-localisation {
       border-radius: $basic-border-radius;
       height: 4rem;
@@ -104,11 +96,22 @@
       text-align: left;
       border: 1px solid #ececec;
       transition: box-shadow 0.5s;
+
+      i {
+        margin-right: $marge-base;
+        margin-left: $marge-base;
+      }
     }
-    .button-localisation:hover {
-      background-color: lighten($color: #9356dc, $amount: 32%);
-      opacity: 0.5;
-      box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #cecece8f;
+    :hover {
+      .button-localisation {
+        background-color: lighten($color: #9356dc, $amount: 32%);
+        opacity: 0.5;
+        box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #cecece8f;
+        i {
+          color: #9356dc;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
