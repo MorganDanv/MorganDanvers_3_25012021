@@ -7,9 +7,11 @@
     padding-top: $intermediate-marge;
     padding-bottom: $intermediate-marge;
   }
+  .espacement {
+    margin-bottom: $marge-base;
+  }
   .bold-effect {
     font-weight: bold;
-    margin-bottom: $marge-base;
   }
   a {
     text-decoration: none;
