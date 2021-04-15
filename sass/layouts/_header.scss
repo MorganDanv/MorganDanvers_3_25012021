@@ -40,6 +40,9 @@
       padding-top: $marge-base;
       padding-bottom: $marge-base;
     }
+    .title {
+      font-family: "shrikhandregular";
+    }
   }
 
   .localisation {
@@ -58,6 +61,7 @@
     }
     .placement-localisation {
       display: flex;
+      font-family: "robotoregular";
     }
   }
   div.reservation {
@@ -78,20 +82,20 @@
       padding-left: $marge-base;
       padding-right: $marge-base;
       border: none;
-      transition: box-shadow 0.5s;
+      transition: all 0.5s;
       cursor: pointer;
     }
 
     button.bouton:hover {
       box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #9e9c9c8f;
+      transition: all 0.5s;
     }
     .decouverte {
       text-align: center;
       margin-top: $marge-base;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       padding-left: 0.8rem;
       padding-right: 0.8rem;
+      font-family: "robotoregular";
     }
 
     p.bold-effect {
@@ -100,6 +104,7 @@
       padding-top: $marge-base;
       padding-left: 1rem;
       padding-right: 1rem;
+      font-family: "robotoregular";
     }
   }
 
@@ -112,6 +117,7 @@
     padding-left: $marge-base;
     font-weight: bold;
     font-size: $intermediate-font-size;
+    font-family: "robotoregular";
   }
   .info-bulles {
     margin-bottom: $marge-base;
@@ -119,19 +125,21 @@
     justify-content: center;
     align-items: center;
     margin-top: $marge-base;
+    position: relative;
     .button-localisation {
       border-radius: $basic-border-radius;
       height: 4rem;
       width: 18rem;
-      background-color: rgb(246, 246, 246);
+      background-color: #f6f6f6;
       cursor: pointer;
       text-align: left;
       border: 1px solid #ececec;
-      transition: box-shadow 0.5s;
+      transition: all 0.5s;
 
       i {
         margin-right: $marge-base;
         margin-left: $marge-base;
+        transition: color 0.5s;
       }
     }
     :hover {
@@ -139,6 +147,7 @@
         background-color: lighten($color: #9356dc, $amount: 32%);
         opacity: 0.5;
         box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #cecece8f;
+
         i {
           color: #9356dc;
           cursor: pointer;
