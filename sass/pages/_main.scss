@@ -11,7 +11,7 @@ main {
     padding-left: $marge-base;
     padding-bottom: 0.5rem;
     background-color: rgb(243, 240, 240);
-    font-family: "robotoregular";
+    font-family:"robotoregular";
   }
   h3.bold-effect {
     font-weight: bold;
@@ -59,8 +59,20 @@ main {
   .images-resto {
     width: 100%;
     transition: transform 0.3s ease;
-    height: 145px;
+    height: $height_image;
     object-fit: cover;
+
+   @include for-tablet-portrait-up {
+     height: 0.5 * $height_image;
+   }
+    @include for-tablet-landscape-up {
+      height: 1.5 * $height_image;
+    }
+    @include for-desktop-up {
+      height: 2 * $height_image;
+    }
+   @include for-big-desktop-up {
+   height:  2.5 * $height_image;
   }
   .images-resto:hover {
     transform: scale(1.2);
@@ -104,6 +116,7 @@ main {
       font-size: 1.5rem;
       background: -webkit-linear-gradient(#9356dc, #ff79da);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     &:hover {
@@ -115,4 +128,4 @@ main {
   a {
     text-decoration: none;
   }
-}
+  }

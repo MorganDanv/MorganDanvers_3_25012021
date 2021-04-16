@@ -50,6 +50,18 @@
     background: linear-gradient(grey 0%, rgb(230, 230, 230) 10%);
     padding-top: $marge-base;
     padding-bottom: $marge-base;
+    @include for-tablet-portrait-up {
+      justify-content: center;
+    }
+    @include for-tablet-landscape-up {
+      justify-content: center;
+    }
+    @include for-desktop-up {
+      justify-content: center;
+    }
+    @include for-big-desktop-up {
+      justify-content: center;
+    }
     .town {
       font-weight: bold;
     }

@@ -1,9 +1,8 @@
 // 1. Configuration and helpers
 @import "utils/variables";
-@import "utils/mixins";
 
 // 3. Base stuff
-@import "base/uniformiser";
+@import "base/uniformiser", "base/mixins", "base/fonts";
 
 // 4. Components
 @import "components/button";
@@ -16,5 +15,3 @@
 
 // 7. Themes
 @import "themes/default";
-
-@import "base/fonts";

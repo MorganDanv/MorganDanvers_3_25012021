@@ -1,16 +1,22 @@
-.footer {
+footer.footer {
   background-color: black;
   width: 20rem;
   font-size: $intermediate-font-size;
-  .informations {
+  section.informations {
     margin-left: $intermediate-marge;
     padding-top: $intermediate-marge;
     padding-bottom: $intermediate-marge;
+
+    .espacement {
+      margin-bottom: $marge-base;
+      font-family: "shrikhandregular";
+    }
+
+    div.roboto-text {
+      font-family: "robotoregular";
+    }
   }
-  .espacement {
-    margin-bottom: $marge-base;
-    font-family: "shrikhandregular";
-  }
+
   .bold-effect {
     font-weight: bold;
     font-family: "robotoregular";
