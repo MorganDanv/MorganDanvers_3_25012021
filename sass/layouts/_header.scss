@@ -138,6 +138,7 @@
     align-items: center;
     margin-top: $marge-base;
     position: relative;
+
     .button-localisation {
       border-radius: $basic-border-radius;
       height: 4rem;
@@ -174,6 +175,18 @@
       padding: 0.25rem 0.5rem;
       border-radius: 50%;
       font-size: 0.9rem;
+      @include for-tablet-portrait-up {
+        left: 8.6rem;
+      }
+      @include for-tablet-landscape-up {
+        left: 18rem;
+      }
+      @include for-desktop-up {
+        left: 27.3rem;
+      }
+      @include for-big-desktop-up {
+        left: 49.8rem;
+      }
     }
   }
 }

@@ -1,7 +1,19 @@
 footer.footer {
   background-color: black;
-  width: 20rem;
+
   font-size: $intermediate-font-size;
+  @include for-tablet-portrait-up {
+    width: auto;
+  }
+  @include for-tablet-landscape-up {
+    width: auto;
+  }
+  @include for-desktop-up {
+    width: auto;
+  }
+  @include for-big-desktop-up {
+    width: auto;
+  }
   section.informations {
     margin-left: $intermediate-marge;
     padding-top: $intermediate-marge;

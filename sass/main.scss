@@ -9,7 +9,8 @@
 
 // 5. Layout-related sections
 @import "layouts/layout", "layouts/header", "layouts/footer";
-
+@import "layouts/a-la-francaise", "layouts/la-note-enchantee",
+  "layouts/la-palette-du-gout", "layouts/le-delice-des-sens";
 // 6. Page-specific styles
 @import "pages/main";
 
