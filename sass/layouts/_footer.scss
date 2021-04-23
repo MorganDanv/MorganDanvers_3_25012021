@@ -1,6 +1,6 @@
 footer.footer {
   background-color: black;
-
+  width: auto;
   font-size: $intermediate-font-size;
   @include for-tablet-portrait-up {
     width: auto;

@@ -7,7 +7,7 @@ main {
   h2.bold-effect {
     font-weight: bold;
     font-size: $dooble-font-size;
-    padding-top: 3rem;
+    padding-top: $big-marge;
     padding-left: $marge-base;
     padding-bottom: 0.5rem;
     background-color: rgb(243, 240, 240);
@@ -37,7 +37,7 @@ main {
     color: black;
   }
   .espacement-bas {
-    margin-bottom: 3rem;
+    margin-bottom: $big-marge;
   }
   .bold-effect2 {
     font-weight: bold;
@@ -106,7 +106,7 @@ main {
     right: 2rem;
     .far {
       position: absolute;
-      font-size: 1.5rem;
+      font-size: $intermediate-font-size;
     }
     .fas {
       z-index: 1;
@@ -114,7 +114,7 @@ main {
       transform: scale(0);
       transition: all 1s;
       position: absolute;
-      font-size: 1.5rem;
+      font-size: $intermediate-font-size;
       background: -webkit-linear-gradient(#9356dc, #ff79da);
       -webkit-background-clip: text;
       background-clip: text;
