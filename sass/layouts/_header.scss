@@ -124,6 +124,7 @@
     padding-bottom: $medium-marge;
     padding-top: $marge-base;
   }
+
   .texte-fonction {
     padding-top: $marge-base;
     padding-left: $marge-base;
@@ -131,17 +132,25 @@
     font-size: $intermediate-font-size;
     font-family: "robotoregular";
   }
+  .info-bulles-box {
+    @include for-tablet-portrait-up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include for-tablet-landscape-up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   .info-bulles {
     margin-bottom: $marge-base;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: $marge-base;
-    // position: relative;
     flex-direction: row-reverse;
-    // width: 42%;
-    // margin-left: auto;
-    // margin-right: auto;
 
     .button-localisation {
       border-radius: $basic-border-radius;
@@ -173,25 +182,12 @@
     }
     .un-deux-trois {
       background-color: #9356dc;
-      // position: absolute;
       display: flex;
-      // left: 0.3rem;
       color: white;
       padding: 0.25rem 0.5rem;
       border-radius: 50%;
       font-size: 0.9rem;
-      @include for-tablet-portrait-up {
-        // left: 8.6rem;
-      }
-      @include for-tablet-landscape-up {
-        // left: 18rem;
-      }
-      @include for-desktop-up {
-        // left: 27.3rem;
-      }
-      @include for-big-desktop-up {
-        // left: 49.8rem;
-      }
+      transform: translateX(12px);
     }
   }
 }
