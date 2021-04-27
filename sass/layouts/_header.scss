@@ -151,17 +151,28 @@
     align-items: center;
     margin-top: $marge-base;
     flex-direction: row-reverse;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    a {
+      width: 100%;
+    }
 
     .button-localisation {
       border-radius: $basic-border-radius;
       height: 4rem;
-      width: 18rem;
+      width: 100%;
       background-color: #f6f6f6;
       cursor: pointer;
       text-align: left;
       border: 1px solid #ececec;
       transition: all 0.5s;
-
+      padding-right: 3rem;
+      @include for-tablet-portrait-up {
+        padding-right: 0.3rem;
+      }
+      @mixin for-tablet-landscape-up {
+        padding-right: 0.3rem;
+      }
       i {
         margin-right: $marge-base;
         margin-left: $marge-base;
