@@ -131,6 +131,18 @@
     font-weight: bold;
     font-size: $intermediate-font-size;
     font-family: "robotoregular";
+    // @mixin for-tablet-portrait-up {
+    //   text-align: center;
+    // }
+    // @mixin for-tablet-landscape-up {
+    //   text-align: center;
+    // }
+    // @mixin for-desktop-up {
+    //   text-align: center;
+    // }
+    // @mixin for-big-desktop-up {
+    //   text-align: center;
+    // }
   }
   .info-bulles-box {
     @include for-tablet-portrait-up {
@@ -151,8 +163,8 @@
     align-items: center;
     margin-top: $marge-base;
     flex-direction: row-reverse;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: $marge-base;
+    padding-right: $marge-base;
     a {
       width: 100%;
     }
@@ -166,7 +178,7 @@
       text-align: left;
       border: 1px solid #ececec;
       transition: all 0.5s;
-      padding-right: 3rem;
+      padding-right: $big-marge;
       @include for-tablet-portrait-up {
         padding-right: 0.3rem;
       }

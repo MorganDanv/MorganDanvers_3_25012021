@@ -1,9 +1,4 @@
 main {
-  .liste-resto a {
-    // background-color: rgb(243, 240, 240);
-    // padding: $marge-base;
-    // display: block;
-  }
   .resto-box-tablette {
     @include for-tablet-portrait-up {
       display: grid;

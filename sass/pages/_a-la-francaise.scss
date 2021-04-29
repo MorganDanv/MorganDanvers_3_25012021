@@ -1,0 +1,133 @@
+.header {
+  background-color: $color-white;
+
+  .accueil {
+    background-color: rgb(255, 255, 255);
+
+    .titre {
+      display: flex;
+      justify-content: space-around;
+    }
+    .title {
+      font-family: "shrikhandregular";
+    }
+    .screen-container {
+      overflow: hidden;
+    }
+    .images-resto {
+      height: 15rem;
+      width: 100%;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+    }
+
+    .images-resto:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.global-container {
+  background-color: rgb(230, 230, 230);
+  height: 50rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  .title-menu {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .heart_container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      right: 2rem;
+      .far {
+        position: absolute;
+        font-size: $intermediate-font-size;
+        font-size: 1.5rem;
+      }
+      .fas {
+        z-index: 1;
+        display: block;
+        transform: scale(0);
+        transition: all 1s;
+        position: absolute;
+        font-size: $intermediate-font-size;
+        background: -webkit-linear-gradient(#9356dc, #ff79da);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.5rem;
+      }
+      &:hover {
+        .fas {
+          transform: scale(1);
+        }
+      }
+    }
+    .shrik-effect {
+      font-family: "shrikhandregular";
+      font-size: 1.5rem;
+    }
+  }
+  .box-entrees {
+    .roboto-effect {
+      font-family: "robotoregular";
+      padding-left: 1rem;
+    }
+  }
+}
+footer.footer {
+  background-color: black;
+  width: auto;
+  font-size: $intermediate-font-size;
+  @include for-tablet-portrait-up {
+    width: auto;
+  }
+  @include for-tablet-landscape-up {
+    width: auto;
+  }
+  @include for-desktop-up {
+    width: auto;
+  }
+  @include for-big-desktop-up {
+    width: auto;
+  }
+  section.informations {
+    margin-left: $intermediate-marge;
+    padding-top: $intermediate-marge;
+    padding-bottom: $intermediate-marge;
+
+    .espacement {
+      margin-bottom: $marge-base;
+      font-family: "shrikhandregular";
+    }
+
+    div.roboto-text {
+      font-family: "robotoregular";
+    }
+  }
+
+  .bold-effect {
+    font-weight: bold;
+    font-family: "robotoregular";
+  }
+  a {
+    text-decoration: none;
+  }
+  .block-text-icone {
+    display: flex;
+    line-height: 2rem;
+
+    i {
+      color: $color-white;
+      margin-right: $marge-base;
+    }
+    .fa-utensils {
+      margin-right: $intermediate-marge;
+    }
+  }
+}
