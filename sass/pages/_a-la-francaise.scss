@@ -79,6 +79,41 @@
       padding-left: 1rem;
     }
   }
+  .info-bulles-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-bulles {
+    margin-bottom: $marge-base;
+    display: block;
+    width: 90%;
+    margin-top: $marge-base;
+
+    .button-localisation {
+      border-radius: $basic-border-radius;
+      height: 5rem;
+      width: 100%;
+      background-color: #f6f6f6;
+      cursor: pointer;
+      text-align: left;
+      border: 1px solid #ececec;
+      transition: all 0.5s;
+      padding-left: 1rem;
+      .text-end {
+        text-align: end;
+        padding-right: 1rem;
+        font-family: "robotoregular";
+      }
+    }
+    .bold-mode {
+      font-weight: bold;
+      font-family: "robotoregular";
+    }
+    .robot-o {
+      font-family: "robotoregular";
+    }
+  }
 }
 footer.footer {
   background-color: black;
