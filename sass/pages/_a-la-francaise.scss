@@ -28,7 +28,6 @@
 }
 .global-container {
   background-color: rgb(230, 230, 230);
-  height: 50rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 
@@ -77,6 +76,7 @@
     .roboto-effect {
       font-family: "robotoregular";
       padding-left: 1rem;
+      font-weight: bold;
     }
   }
   .info-bulles-box {
@@ -90,7 +90,7 @@
     width: 90%;
     margin-top: $marge-base;
 
-    .button-localisation {
+    .button-repas {
       border-radius: $basic-border-radius;
       height: 5rem;
       width: 100%;
@@ -105,14 +105,51 @@
         padding-right: 1rem;
         font-family: "robotoregular";
       }
+      .box-prix-accompagnements {
+        display: flex;
+        justify-content: space-between;
+      }
     }
     .bold-mode {
       font-weight: bold;
       font-family: "robotoregular";
+      font-size: 1rem;
     }
     .robot-o {
       font-family: "robotoregular";
     }
+  }
+  .box-plats {
+    font-family: "robotoregular";
+    padding-left: 1rem;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+  .box-desserts {
+    font-family: "robotoregular";
+    padding-left: 1rem;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+  .box-bouton-commander {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  button.bouton {
+    text-align: center;
+    background-color: #ff79da;
+    border-radius: 2rem;
+    height: 2.5rem;
+    margin-top: $intermediate-marge;
+    margin-bottom: $intermediate-marge;
+    color: $color-white;
+    background: linear-gradient(#ff79da, #9356dc);
+    padding-left: $marge-base;
+    padding-right: $marge-base;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
   }
 }
 footer.footer {
