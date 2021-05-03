@@ -131,18 +131,6 @@
     font-weight: bold;
     font-size: $intermediate-font-size;
     font-family: "robotoregular";
-    // @mixin for-tablet-portrait-up {
-    //   text-align: center;
-    // }
-    // @mixin for-tablet-landscape-up {
-    //   text-align: center;
-    // }
-    // @mixin for-desktop-up {
-    //   text-align: center;
-    // }
-    // @mixin for-big-desktop-up {
-    //   text-align: center;
-    // }
   }
   .info-bulles-box {
     @include for-tablet-portrait-up {
