@@ -34,142 +34,145 @@
     }
   }
 }
-.global-container {
+.container-main {
   background-color: rgb(230, 230, 230);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-
-  .title-menu {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    justify-content: space-between;
-    .heart_container {
+  margin-top: -3rem;
+  position: relative;
+  .global-container {
+    .title-menu {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
       display: flex;
-      align-items: center;
-      position: relative;
-      right: 2rem;
-      .far {
-        position: absolute;
-        font-size: $intermediate-font-size;
-        font-size: 1.5rem;
-      }
-      .fas {
-        z-index: 1;
-        display: block;
-        transform: scale(0);
-        transition: all 1s;
-        position: absolute;
-        font-size: $intermediate-font-size;
-        background: -webkit-linear-gradient(#9356dc, #ff79da);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 1.5rem;
-      }
-      &:hover {
+      justify-content: space-between;
+      .heart_container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 2rem;
+        .far {
+          position: absolute;
+          font-size: $intermediate-font-size;
+          font-size: 1.5rem;
+        }
         .fas {
-          transform: scale(1);
+          z-index: 1;
+          display: block;
+          transform: scale(0);
+          transition: all 1s;
+          position: absolute;
+          font-size: $intermediate-font-size;
+          background: -webkit-linear-gradient(#9356dc, #ff79da);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 1.5rem;
+        }
+        &:hover {
+          .fas {
+            transform: scale(1);
+          }
         }
       }
+      .shrik-effect {
+        font-family: "shrikhandregular";
+        font-size: 1.5rem;
+      }
     }
-    .shrik-effect {
-      font-family: "shrikhandregular";
-      font-size: 1.5rem;
+    .box-entrees {
+      .roboto-effect {
+        font-family: "robotoregular";
+        font-weight: bold;
+      }
     }
-  }
-  .box-entrees {
-    .roboto-effect {
-      font-family: "robotoregular";
-      font-weight: bold;
+    .color-line {
+      height: 0.2rem;
+      width: 2.5rem;
+      background-color: #99e2d0;
+      border: 1px solid #99e2d0;
+      margin-top: 0.4rem;
+      margin-left: 1rem;
     }
-  }
-  .color-line {
-    height: 0.2rem;
-    width: 2.5rem;
-    background-color: #99e2d0;
-    border: 1px solid #99e2d0;
-    margin-top: 0.4rem;
-    margin-left: 1rem;
-  }
-  .info-bulles-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .info-bulles {
-    margin-bottom: $marge-base;
-    display: block;
-    width: 90%;
-    margin-top: $marge-base;
+    .info-bulles-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .info-bulles {
+      margin-bottom: $marge-base;
+      display: block;
+      width: 90%;
+      margin-top: $marge-base;
 
-    .button-repas {
-      border-radius: $basic-border-radius;
-      height: 5rem;
-      width: 100%;
-      background-color: #f6f6f6;
-      cursor: pointer;
-      text-align: left;
-      border: 1px solid #ececec;
-      transition: all 0.5s;
-      padding-left: 1rem;
-      .text-end {
-        text-align: end;
-        padding-right: 1rem;
+      .button-repas {
+        border-radius: $basic-border-radius;
+        height: 5rem;
+        width: 100%;
+        background-color: #f6f6f6;
+        cursor: pointer;
+        text-align: left;
+        border: 1px solid #ececec;
+        transition: all 0.5s;
+        padding-left: 1rem;
+        .text-end {
+          text-align: end;
+          padding-right: 1rem;
+          font-family: "robotoregular";
+        }
+        .box-prix-accompagnements {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .bold-mode {
+        font-weight: bold;
+        font-family: "robotoregular";
+        font-size: 1rem;
+      }
+      .robot-o {
         font-family: "robotoregular";
       }
-      .box-prix-accompagnements {
-        display: flex;
-        justify-content: space-between;
-      }
     }
-    .bold-mode {
+    .box-plats {
+      font-family: "robotoregular";
       font-weight: bold;
-      font-family: "robotoregular";
-      font-size: 1rem;
+      padding-top: 1rem;
     }
-    .robot-o {
-      font-family: "robotoregular";
+    .roboto-effect {
+      margin-left: 1rem;
     }
-  }
-  .box-plats {
-    font-family: "robotoregular";
-    font-weight: bold;
-    padding-top: 1rem;
-  }
-  .roboto-effect {
-    margin-left: 1rem;
-  }
-  .box-desserts {
-    font-family: "robotoregular";
-    font-weight: bold;
-    padding-top: 1rem;
-  }
-  .box-bouton-commander {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
-  }
-  button.bouton {
-    text-align: center;
-    background-color: #ff79da;
-    border-radius: 2rem;
-    height: 2.5rem;
-    margin-top: $intermediate-marge;
-    margin-bottom: $intermediate-marge;
-    color: $color-white;
-    background: linear-gradient(#ff79da, #9356dc);
-    padding-left: $marge-base;
-    padding-right: $marge-base;
-    border: none;
-    transition: all 0.5s;
-    cursor: pointer;
-  }
-  button.bouton:hover {
-    box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #9e9c9c8f;
-    transition: all 0.5s;
+    .box-desserts {
+      font-family: "robotoregular";
+      font-weight: bold;
+      padding-top: 1rem;
+    }
+    .box-bouton-commander {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+    button.bouton {
+      text-align: center;
+      background-color: #ff79da;
+      border-radius: 2rem;
+      height: 2.5rem;
+      margin-top: $intermediate-marge;
+      margin-bottom: $intermediate-marge;
+      color: $color-white;
+      background: linear-gradient(#ff79da, #9356dc);
+      padding-left: $marge-base;
+      padding-right: $marge-base;
+      border: none;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    button.bouton:hover {
+      box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #9e9c9c8f;
+      transition: all 0.5s;
+    }
   }
 }
 footer.footer {
