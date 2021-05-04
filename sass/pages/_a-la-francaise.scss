@@ -100,23 +100,41 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .info-bulles {
       margin-bottom: $marge-base;
-      display: block;
-      width: 90%;
+      display: flex;
       margin-top: $marge-base;
+      border-radius: $basic-border-radius;
+      background-color: #f6f6f6;
+      width: 100%;
 
+      .check {
+        width: 0px;
+        background-color: green;
+        transition: all 0.3s;
+        overflow: hidden;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+      &:hover {
+        .check {
+          width: 150px;
+        }
+      }
       .button-repas {
-        border-radius: $basic-border-radius;
         height: 5rem;
-        width: 100%;
         background-color: #f6f6f6;
         cursor: pointer;
         text-align: left;
-        border: 1px solid #ececec;
+        border: 1px solid #f6f6f6;
         transition: all 0.5s;
         padding-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
         .text-end {
           text-align: end;
           padding-right: 1rem;
@@ -127,6 +145,7 @@
           justify-content: space-between;
         }
       }
+
       .bold-mode {
         font-weight: bold;
         font-family: "robotoregular";
@@ -136,6 +155,7 @@
         font-family: "robotoregular";
       }
     }
+
     .box-plats {
       font-family: "robotoregular";
       font-weight: bold;
