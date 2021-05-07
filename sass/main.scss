@@ -3,6 +3,7 @@
 
 // 3. Base stuff
 @import "base/uniformiser", "base/mixins", "base/fonts";
+@import "base/.animations";
 
 // 4. Components
 @import "components/button";
