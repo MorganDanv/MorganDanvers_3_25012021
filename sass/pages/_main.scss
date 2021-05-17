@@ -107,7 +107,6 @@ main {
       padding: 5px 10px;
       width: 100px;
       font-family: sans-serif;
-      size: 11px;
       color: green;
       background-color: #99e2d0;
       text-align: center;
@@ -128,6 +127,7 @@ main {
     align-items: center;
     position: relative;
     right: 2rem;
+
     .far {
       position: absolute;
       font-size: $intermediate-font-size;
