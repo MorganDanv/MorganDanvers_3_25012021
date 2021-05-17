@@ -179,8 +179,10 @@
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
+          display: block;
         }
         .text-end {
+          display: block;
           text-align: end;
           padding: 0 0.5rem;
           font-family: "robotoregular";
@@ -191,19 +193,21 @@
         }
       }
 
-      h3.bold-mode {
+      span.bold-mode {
         font-weight: bold;
         font-family: "robotoregular";
         font-size: 1rem;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        display: block;
       }
       .robot-o {
         font-family: "robotoregular";
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        display: block;
       }
     }
 
