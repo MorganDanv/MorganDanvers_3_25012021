@@ -66,6 +66,7 @@
           position: absolute;
           font-size: $intermediate-font-size;
           background: -webkit-linear-gradient(#9356dc, #ff79da);
+          background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-size: 1.5rem;
