@@ -14,7 +14,7 @@ footer.footer {
   @include for-big-desktop-up {
     width: auto;
   }
-  div.informations {
+  section.informations {
     margin-left: $intermediate-marge;
     padding-top: $intermediate-marge;
     padding-bottom: $intermediate-marge;
