@@ -1,4 +1,5 @@
 footer.footer {
+  padding: 0;
   background-color: black;
   width: auto;
   font-size: $intermediate-font-size;
@@ -46,6 +47,14 @@ footer.footer {
     }
     .fa-utensils {
       margin-right: $intermediate-marge;
+    }
+  }
+}
+body {
+  .color-text-white {
+    color: $color-white;
+    a {
+      transition: $default-transition;
     }
   }
 }
