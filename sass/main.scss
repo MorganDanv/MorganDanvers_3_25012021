@@ -9,11 +9,11 @@
 @import "components/button";
 
 // 5. Layout-related sections
-@import "layouts/layout", "layouts/header", "layouts/footer";
+@import "layouts/layout", "layouts/header", "layouts/footer",
+  "layouts/header-pages";
 
 // 6. Page-specific styles
 @import "pages/main";
-@import "pages/a-la-francaise", "pages/la-note-enchantee",
-  "pages/la-palette-du-gout", "pages/le-delice-des-sens";
+@import "pages/la-note-enchantee";
 // 7. Themes
 @import "themes/default";

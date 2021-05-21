@@ -165,7 +165,7 @@
         transition: color 0.5s;
       }
     }
-    :hover {
+    &:hover {
       .button-localisation {
         background-color: lighten($color: #9356dc, $amount: 32%);
         opacity: 0.5;
