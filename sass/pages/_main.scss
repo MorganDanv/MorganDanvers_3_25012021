@@ -141,6 +141,7 @@ main {
       font-size: $intermediate-font-size;
       background: -webkit-linear-gradient(#9356dc, #ff79da);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     &:hover {

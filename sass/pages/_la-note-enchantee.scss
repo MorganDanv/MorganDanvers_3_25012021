@@ -1,16 +1,9 @@
 .header {
-  background-color: $color-white;
-
   .accueil {
-    background-color: rgb(255, 255, 255);
-
     .titre {
       display: flex;
       justify-content: space-around;
       align-items: center;
-    }
-    .title {
-      font-family: "shrikhandregular";
     }
     .no-deco-button {
       color: black;
@@ -34,8 +27,9 @@
     }
   }
 }
-
-&:nth-child(4) {
-  animation: appears 0.5s forwards 1.25s;
-  animation-timing-function: ease-in-out;
+.info-bulles {
+  &:nth-child(4) {
+    animation: appears 0.5s forwards 1.25s;
+    animation-timing-function: ease-in-out;
+  }
 }

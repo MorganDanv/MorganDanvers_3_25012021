@@ -68,13 +68,14 @@ html {
         }
       }
       .box-entrees {
+        font-family: "robotoregular";
         .roboto-effect {
           font-family: "robotoregular";
           font-weight: bold;
         }
       }
       .color-line {
-        height: 0.2rem;
+        height: 0.1rem;
         width: 2.5rem;
         background-color: #99e2d0;
         border: 1px solid #99e2d0;
@@ -165,6 +166,8 @@ html {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            display: flex;
+            flex-direction: column;
           }
           .text-end {
             text-align: end;
@@ -185,7 +188,7 @@ html {
           overflow: hidden;
           white-space: nowrap;
         }
-        .robot-o {
+        span.robot-o {
           font-family: "robotoregular";
           text-overflow: ellipsis;
           overflow: hidden;
