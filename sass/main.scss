@@ -9,9 +9,8 @@
 @import "components/button";
 
 // 5. Layout-related sections
-@import "layouts/header", "layouts/footer", "layouts/main";
+@import "layouts/header-accueil", "layouts/footer-commun",
+  "layouts/main-accueil", "layouts/header-menus", "layouts/main-menus";
 
 // 6. Page-specific styles
-@import "pages/la-note-enchantee", "pages/header-pages", "pages/main-pages";
-// 7. Themes
-@import "themes/default";
+@import "pages/la-note-enchantee";
