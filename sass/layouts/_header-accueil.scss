@@ -21,19 +21,19 @@
       font-weight: bold;
       text-align: center;
       background-color: $color-white;
-      padding-top: $marge-base;
-      padding-bottom: $marge-base;
+      padding: $marge-base;
     }
     .title {
       font-family: "shrikhandregular";
+      margin: 0 auto;
     }
   }
 
   .localisation {
-    display: flex;
-    background: linear-gradient(grey 0%, rgb(230, 230, 230) 10%);
+    background: linear-gradient(#c5c5c5 0%, #ececec 10%);
     padding-top: $marge-base;
     padding-bottom: $marge-base;
+    align-items: center;
     @include for-tablet-portrait-up {
       justify-content: center;
     }
@@ -53,15 +53,15 @@
     .fa-map-marker-alt {
       font-size: $small-font-size;
       margin-right: $marge-base;
-      margin-left: 4.5rem;
     }
     .placement-localisation {
       display: flex;
       font-family: "robotoregular";
+      justify-content: center;
     }
   }
   div.reservation {
-    background-color: #f6f6f6;
+    background-color: #f7f7f7;
     text-align: center;
     padding-top: $marge-base;
     padding-bottom: $marge-base;
@@ -145,12 +145,13 @@
       border-radius: $basic-border-radius;
       height: 4rem;
       width: 100%;
-      background-color: #f6f6f6;
+      background-color: #fbfbfb;
       cursor: pointer;
       text-align: left;
       border: 1px solid #ececec;
       transition: all 0.5s;
       padding-right: $big-marge;
+
       @include for-tablet-portrait-up {
         padding-right: 0.3rem;
       }
@@ -161,6 +162,9 @@
         margin-right: $marge-base;
         margin-left: $marge-base;
         transition: color 0.5s;
+      }
+      span {
+        font-size: 1.1em;
       }
     }
     &:hover {
@@ -183,6 +187,7 @@
       border-radius: 50%;
       font-size: 0.9rem;
       transform: translateX(12px);
+      font-family: "robotoregular";
     }
   }
 }

@@ -1,5 +1,5 @@
 .container-main {
-  background-color: rgb(230, 230, 230);
+  background-color: #efefef;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   margin-top: -3rem;
@@ -17,9 +17,10 @@
         align-items: center;
         position: relative;
         right: 2rem;
+        // font-size: 1.5rem;
         .far {
           position: absolute;
-          font-size: $intermediate-font-size;
+          // font-size: $intermediate-font-size;
           font-size: 1.5rem;
         }
         .fas {
@@ -28,7 +29,7 @@
           transform: scale(0);
           transition: all 1s;
           position: absolute;
-          font-size: $intermediate-font-size;
+          // font-size: $intermediate-font-size;
           background: -webkit-linear-gradient(#9356dc, #ff79da);
           -webkit-background-clip: text;
           background-clip: text;
@@ -195,7 +196,6 @@
     }
     button.bouton {
       text-align: center;
-      background-color: #ff79da;
       border-radius: 2rem;
       height: 2.5rem;
       margin-top: $intermediate-marge;

@@ -23,6 +23,7 @@ footer.footer {
     .espacement {
       margin-bottom: $marge-base;
       font-family: "shrikhandregular";
+      font-size: 1.3rem;
     }
 
     div.roboto-text {
@@ -40,6 +41,8 @@ footer.footer {
   .block-text-icone {
     display: flex;
     line-height: 2rem;
+    align-items: center;
+    font-size: 1.1rem;
 
     i {
       color: $color-white;
@@ -53,6 +56,8 @@ footer.footer {
 body {
   .color-text-white {
     color: $color-white;
+    line-height: 2rem;
+    font-size: 1.1rem;
     a {
       transition: $default-transition;
     }
