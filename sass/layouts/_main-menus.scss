@@ -20,7 +20,6 @@
         // font-size: 1.5rem;
         .far {
           position: absolute;
-          // font-size: $intermediate-font-size;
           font-size: 1.5rem;
         }
         .fas {
@@ -29,7 +28,6 @@
           transform: scale(0);
           transition: all 1s;
           position: absolute;
-          // font-size: $intermediate-font-size;
           background: -webkit-linear-gradient(#9356dc, #ff79da);
           -webkit-background-clip: text;
           background-clip: text;

@@ -169,9 +169,9 @@
     }
     &:hover {
       .button-localisation {
-        background-color: lighten($color: #9356dc, $amount: 32%);
-        opacity: 0.5;
-        box-shadow: 0px 0.5px 0.5px 0.5px #ffffff00, 0px 3px 3px 3px #cecece8f;
+        background-color: lighten($color: #a26be6, $amount: 30%);
+        opacity: 0.8;
+        box-shadow: 0px 0.5px 0.5px 0.5px #00000000, 0px 3px 3px 3px #f0f0f08f;
 
         i {
           color: #9356dc;
